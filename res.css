@@ -93,7 +93,11 @@
     }
 }
 
-
+@media only screen and (max-width: 830px){
+        #main{
+            flex-direction: column;
+        }
+}
 @media only screen and (max-width:767px){
 
      #three{
@@ -138,5 +142,28 @@
     }
     #query{
         padding: 1rem;
+    }
+}
+
+
+@media only screen and (max-width:400px){
+    #three{
+        margin-left: -80px;
+    }
+
+    #query{
+        margin-left: 1.5rem;
+    }
+
+    .small{
+        margin-top: 5px;
+    }
+
+    .small,#msg{
+        width: 15rem;
+    }
+
+    #send{
+        margin-left: -11rem;
     }
 }
