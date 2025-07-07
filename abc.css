@@ -1,0 +1,392 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+#burger{
+        display: none;
+}
+
+
+#header{
+    max-width: 100%;
+    height: 3rem;
+    background: #000000;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+
+#header ul{
+    display: flex;
+    gap: 3rem;
+    position: relative;
+}
+
+#header ul li{
+
+    list-style-type: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 430;
+    font-size: 15px;
+    line-height: 1rem;
+    color: white;
+}
+
+#more{
+    cursor: pointer;
+}
+#more ul{
+    background: #ccc;
+    width: 10rem;
+    height: 23vh;
+    position: absolute;
+    right: -110px;
+    top: 20px;
+    display: none;
+    z-index: 1000;
+    padding:0;
+}
+
+#more ul li{
+
+    height: 5vh;
+    padding-top: 1rem;
+}
+
+#more:active{
+    background:#CCCCCC;
+    color: black;
+}
+
+#more:hover ul{
+    display: block;
+    background: white;
+    
+}
+
+#more:hover ul li{
+    border-bottom: 2px solid black;
+    color: black;
+    
+}
+
+#more ul li:hover{
+    background: #ccc;
+
+}
+
+#header ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+#header i{
+   margin: 1rem 2rem;
+   color: white;
+}
+
+
+#slide-show {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#slide-show img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+#th{
+    width: 30%;
+    height: auto;
+    background: transparent;
+    position: absolute;
+    bottom: 3rem;
+    left: 40%;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+}
+
+#th h2{
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+#th p{
+    font-weight: bold;
+    word-spacing: 0px;
+}
+
+#band-content, #tour-content,#contact-content{
+
+    width: 100%;
+    height: auto;
+    padding-bottom: 6rem;
+}
+
+#band, #tour,#contact {
+    width: 70%;
+    max-width: 100%;
+    height: auto;
+    margin: 0px auto;
+    
+}
+
+#band h1{
+    margin: 0;
+    padding: 3rem 1rem 1rem 0;
+    line-height: 1rem;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+    letter-spacing: 2px;
+    
+}
+
+.font{
+    font-style: italic;
+    text-align: center;
+    color: #8F8F8F;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+#content{
+    text-align: justify;
+    line-height: 2rem;
+    font-size: clamp(1rem,5vw,2rem);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#name{
+    width: 90%;
+    height: auto;
+    padding: 2rem 2.9rem 0 2.9rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}  
+
+#name img{
+
+    height: auto;
+    width: 80%;
+    max-width: 100%;
+}
+
+#tour-content{
+    background: #000000;
+}
+
+#tour h1{
+    margin: 0;
+    padding: 4rem 0 0 0;
+    line-height: 4rem;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    
+    color: white;
+}
+
+#booking{
+    height: auto;
+    width: 100%; 
+    background: white;
+    
+}
+
+.sep{
+    height: 1rem;
+    display: flex;
+    border-bottom: 2px solid rgb(71, 63, 52);
+    padding: 1rem 0 1rem 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.sep span{
+    background: red;
+    width: 8%;
+    height: 1.3rem;
+    margin-left: 1rem;
+    text-align: center;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#three{
+        width: 3%;
+        border-radius: 3rem;
+        position: relative;
+        left: 85%;
+        background: black;
+}
+
+#cities{
+
+    width: 100%;
+    height: auto;
+    display: flex;  
+    justify-content: space-between;
+
+}
+
+.city{
+
+    width: 30%;
+    height: auto;
+    background: white;
+    padding-bottom: 2.5rem;  
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.city img{
+    width: 100%;
+    height: auto;
+}
+
+.city p{
+    margin-left: 1rem;
+}
+
+.city button{
+    margin-left: 1rem;
+    width: 7rem;
+    height: 2.5rem;
+    background: black;
+    color: white;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 1rem;
+     cursor: pointer;
+     border-style:none;
+}
+
+.city button:hover{
+        background: #CCCCCC;
+        color: black;
+        
+}
+
+.city-name{
+
+    color: black;
+    font-weight: bold;
+}
+
+.date{
+    color: #8C8C8C;
+}
+
+.para{
+    color: #000000;
+     font-size: clamp(1rem,5vw,2rem);
+}
+
+
+#contact h1{
+    margin: 0;
+    padding: 5rem 1rem 1rem 0;
+    line-height: 1rem;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+#main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#details{
+    height: auto;
+    margin-top: -40px;
+}
+
+#details ul li{
+    list-style-type: none;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    gap: 1rem;
+}
+
+.small{
+    width: 13rem;
+    height: 2rem;
+
+}
+
+#msg{
+    width: 26.7rem;
+    height: 2rem;
+    margin-top: 1rem;
+}
+
+#query button{
+    width: 5rem;
+    height: 2.5rem;
+    margin-top: 1rem;
+    position: relative;
+    left: 350px;
+    background: black;
+    color: white;
+    border-style: none;
+}
+
+
+#img img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+#footer{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer-content{
+    text-align: center;
+    width: 30%;
+    height: 15vh;
+}
+
+#icons i {
+        font-size: 2rem;
+}
+
+#icons i:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#footer-content p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#home{
+    width: 10rem;
+    height: 5rem;
+    color: white;
+    text-align: center;
+    padding-top: 12px;
+    font-weight: bold;
+    font-size: 20px;
+    display: none;
+}
